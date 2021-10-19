@@ -1,7 +1,7 @@
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
-text = input("seu texto: ")
-shift = int(input("shift: "))
+text = input("Type your message:\n").lower()
+shift = int(input("Type the shift number:\n"))
 
 def encrypt(text_input, shift_input):
     text_list = list(text_input)
@@ -54,7 +54,7 @@ encrypt(text_input=text, shift_input=shift)
 #                 letter = alphabet[new_index]
 #                 cipher_text += letter
 #             else:
-#                 letter = alphabet[new_index - len(alphabet)] # retorna a posição 0 da lista
+#                 letter = alphabet[new_index - len(alphabet)] 
 #                 cipher_text += letter
 
 #     print(f"The encoded text is {cipher_text}")
